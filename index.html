@@ -3,35 +3,65 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./reset.css" />
-    <link rel="stylesheet" href="./style.css" />
-    <title>DOM PlayGround</title>
+    <title>DOM PlayGround a Place to Learn JS Events</title>
   </head>
   <body>
-    <nav>
-      <div class="logo">logo</div>
+    <nav class="nav-wrapper">
+      <div class="logo">Logo</div>
       <ul class="nav-links">
         <li class="nav-link">Home</li>
         <li class="nav-link">About</li>
-        <li class="nav-link">Contact Us</li>
+        <li class="nav-link">Contact</li>
       </ul>
     </nav>
-    <header>
-      <h1 class="header-text">Dom Playground</h1>
+    <header class="header-wrapper">
+      <h1 class="header-text">DOM PlayGround</h1>
     </header>
-    <main class="app-wrapper">
-      <section class="display-window"></section>
-      <section class="btn-gallery">
-        <button class="btn btn-1">Button 1</button>
-        <button class="btn btn-2">Button 2</button>
-        <button class="btn btn-3">Button 3</button>
+    <main class="main-wrapper">
+      <section class="lesson-wrapper">
+        <article class="lesson-content">
+          <h2 class="lesson-title">Targeted Event Handling</h2>
+          <p class="lesson-text">
+            This button changes the background of its container using event
+            handling. Using Query Selectors, you can target classes in your HTML
+            to apply JavaScript funtions to. In this example I am targeting the
+            buttons classes and using several type of event listener types to
+            change the background of the button.
+          </p>
+        </article>
+        <div class="lesson-display">
+          <button class="btn single-click-btn">Click Me</button>
+          <button class="btn double-click-btn">Double Click Me</button>
+          <button class="btn mouse-on-btn">Hover Me</button>
+          <button class="btn mouse-off-btn">Get Off Me</button>
+        </div>
+      </section>
+      <section class="lesson-wrapper">
+        <article class="lesson-content">
+          <h2 class="lesson-title">Event Propegation</h2>
+          <p class="lesson-text">
+            The aim of this lesson is to learn how to listen for child element
+            events. By picking an event listener on a parent div, you can
+            respond to many different children elements by using event targets.
+          </p>
+        </article>
+        <div class="lesson-display">
+          <div class="box-wrapper">
+            <div class="event-box">1</div>
+            <div class="event-box">2</div>
+            <div class="event-box">3</div>
+            <div class="event-box">4</div>
+            <div class="event-box">5</div>
+            <div class="event-box">6</div>
+          </div>
+        </div>
       </section>
     </main>
-
     <script src="./app.js"></script>
   </body>
 </html>
